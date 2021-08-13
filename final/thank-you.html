@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="refresh" content="4; url=https://www.gobeyondskool.com">
+    <meta charset="UTF-8">
+    <title>gobeyondskool.com - Thank you for booking your Free Demo</title>
+
+    <link type="text/css" rel="stylesheet" href="/css/style1.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T7N9HPL');</script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+        .thankyou {
+            position: absolute;
+            left: 0;
+            top: 150px;
+            right: 0;
+            text-align:center;
+            font-size: calc(0.75em + 1vmin);
+        }
+        .redirectmsg {
+            position: absolute;
+            left: 0;
+            top: 200px;
+            right: 0;
+            text-align:center;
+            font-size: calc(0.75em + 1vmin);
+        }
+        .countdown{
+            position: absolute;
+            left: 0;
+            top: 250px;
+            right: 0;
+            text-align:center;
+            font-size: calc(0.75em + 1vmin);
+        }
+        .footer {
+            background: #363897;
+            padding: 5px;
+            bottom:0;
+            position:fixed;
+            width:100%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7N9HPL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+
+    <nav class="top-nav">
+        <div class="container">
+          <div class="row">
+            <div class="logo-sec">
+                <img src="D:\api-form\final\images\beyondskool.png">
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <section>
+
+    <div class="thankyou text-center" style = "font-size: 'large'"><h1>Thank You for booking your Demo Session</h1></div>
+    <!-- <div class="redirectmsg text-center" style = "font-size: 'large'"><h3>You will now be redirected to the main Website</h3></div> -->
+
+    <div class="countdown text-center" id="countdown" style = "font-size: 'large'"> </div>
+
+    </section>
+
+    <section class="footer">
+        <p class="copywright" style="margin:0px">© 2021 Ivy Minds Learning Solutions Pvt. Ltd.</p>
+    </section>
+
+</body>
+
+<script>
+    window.onload = function() {
+    var countdownElement = document.getElementById('countdown'),
+        seconds = 3,
+        second = 0,
+        interval;
+
+    interval = setInterval(function() {
+        countdownElement.firstChild.data = 'You will now be redirected to the main Website in ' + (seconds - second) + ' seconds';
+        if (second >= seconds) {
+            clearInterval(interval);
+        }
+        second++;
+    }, 1000);
+}
+</script>
+
+</html>
